@@ -1,0 +1,39 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "__MSG_appName__",
+  "short_name": "__MSG_appName__",
+  "description": "__MSG_appDesc__",
+  "default_locale": "zh_CN",
+  
+  "version": "1.0.0",
+  "permissions": ["activeTab", "contextMenus", "pageCapture", "proxy", "tabs", "webRequest", "webRequestBlocking", "webNavigation", "*://*/*"],
+  "background": {
+    "scripts": []
+  },
+  "browser_action": {
+    "default_title": "添加网址到收藏家(Alt+Q)",
+    "default_icon": "logo.png",
+    "default_popup": "view/index.html"
+  },
+  "commands": {
+    "toggle-pin-tab": {
+      "suggested_key": {
+        "default": "Alt+Q",
+        "mac": "Alt+Q"
+      },
+      "description": "添加网址到收藏家."
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["view/content.css"],
+      "js": ["view/content.js"]
+    }
+  ],
+  "icons": {
+    "128": "logo.png"
+  },
+  "manifest_version": 2
+}

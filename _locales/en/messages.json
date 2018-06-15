@@ -1,0 +1,20 @@
+{
+	"appName": {
+		"message": "Collector",
+		"description": "Collector"
+	},
+	
+	"shortName": {
+		"message": "Collector",
+		"description": "Collector"
+	},
+	
+	"appDesc": {
+		"message": "Fast collection of URLs to collectors.",
+		"description": "Fast collection of URLs to collectors."
+	},
+	
+	"menuLabel": {
+		"message": "Add to the collector(&X)"
+	}
+}

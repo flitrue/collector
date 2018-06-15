@@ -1,0 +1,20 @@
+{
+	"appName": {
+		"message": "收藏家",
+		"description": "收藏家"
+	},
+	
+	"shortName": {
+		"message": "收藏家",
+		"description": "收藏家"
+	},
+	
+	"appDesc": {
+		"message": "快速收藏网址到收藏家中。",
+		"description": "快速收藏网址到收藏家中。"
+	},
+	
+	"menuLabel": {
+		"message": "添加到收藏家(&X)"
+	}
+}
