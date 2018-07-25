@@ -7,9 +7,10 @@
   "default_locale": "zh_CN",
   
   "version": "1.0.0",
-  "permissions": ["activeTab", "contextMenus", "pageCapture", "proxy", "tabs", "webRequest", "webRequestBlocking", "webNavigation", "*://*/*"],
+  "permissions": ["activeTab", "contextMenus", "pageCapture", "proxy", "tabs", "webRequest", "webRequestBlocking", "webNavigation", "*://*/*", "notifications", "storage"],
   "background": {
-    "scripts": []
+    "scripts": ["background.js"],
+    "persistent": true
   },
   "browser_action": {
     "default_title": "添加网址到收藏家(Alt+Q)",
@@ -17,10 +18,10 @@
     "default_popup": "view/index.html"
   },
   "commands": {
-    "toggle-pin-tab": {
+    "toggle-feature-foo": {
       "suggested_key": {
-        "default": "Alt+Q",
-        "mac": "Alt+Q"
+        "default": "Ctrl+Shift+1",
+        "mac": "Ctrl+Shift+1"
       },
       "description": "添加网址到收藏家."
     }
